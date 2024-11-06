@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import serviceImg from "../assets/BFC LOGO.png"
 import servicebg from "../assets/blackbg.jpg"
 
+import nlp from "../assets/service/NLP.png"
+import sa from "../assets/service/Sentimental-Analysis.png"
+import sd from "../assets/service/Stablediffuion.png"
+
 const FlipCard = ({ firstImage, secondImage, title, description, subtitle, link,servImage }) => {
   const [bgImage1, setBgImage1] = useState('');
   const [bgImage2, setBgImage2] = useState('');
@@ -19,10 +23,6 @@ const FlipCard = ({ firstImage, secondImage, title, description, subtitle, link,
         <div className="align-center">
           <img src="http://titanicthemes.com/files/flipbox/kallyas2.png" className="boxshadow" alt="" />
         </div>
-        <img className='serv-img' src={`${servImage}`} alt="Service" />
-
-        <h2 className="textshadow">{title}</h2>
-        
       </div>
       <div className="flip-overlay"></div>
     </div>
@@ -49,24 +49,18 @@ const AI = () => {
     <div className="centerflipcards">
        
     <FlipCard
-        firstImage="https://images.unsplash.com/photo-1477313372947-d68a7d410e9f?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb"
+        firstImage={nlp}
         secondImage={servicebg}
-        title="Natural Language Processing"
-        servImage={serviceImg}
         description="We offer advanced Natural Language Processing services, including text summarization, translation, text-to-speech, and text generation. Our AI-powered solutions help businesses process large amounts of data, convert text into different formats, and generate human-like responses for seamless interaction."
       />
       <FlipCard
-        firstImage="https://images.unsplash.com/photo-1477313372947-d68a7d410e9f?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb"
+        firstImage={sa}
         secondImage={servicebg}
-        title="Sentiment Analysis"
-        servImage={serviceImg}
         description="Our sentiment analysis service deciphers the emotions behind the text, allowing businesses to gain valuable insights into customer opinions, feedback, and trends. We help you understand the tone of conversations and make data-driven decisions that improve customer experiences."
       />
      <FlipCard
-        firstImage="https://images.unsplash.com/photo-1477313372947-d68a7d410e9f?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb"
+        firstImage={sd}
         secondImage={servicebg}
-        title="Stable Diffusion (Text to Image, Text to 3D)"
-        servImage={serviceImg}
         description="Our advanced Stable Diffusion technology turns your text into stunning images and 3D models. Whether you need creative visuals for marketing or detailed 3D models for product design, our AI generates visually compelling results based on simple text input."
       />
        

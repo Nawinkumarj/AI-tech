@@ -10,7 +10,7 @@ import testi5 from '../assets/testimonials/Pc.jpg';
 import testi6 from '../assets/testimonials/Synergist.jpg';
 
 // inside lg images
-import testiL1 from "../assets/testimonials/consulven-lg.jpg";
+import testiL1 from "../assets/testimonials/consulvenlg.jpg";
 import testiL2 from "../assets/testimonials/EEBlg.jpg";
 import testiL3 from "../assets/testimonials/fplg.jpg";
 import testiL4 from "../assets/testimonials/Nexuslg.jpg";

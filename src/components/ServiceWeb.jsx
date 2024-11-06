@@ -5,14 +5,10 @@ import webbanner from "../assets/service/Website.png"
 import ecombanner from "../assets/service/E-com.png"
 import webappbanner from "../assets/service/Webapp.png"
 import uiuxbanner from "../assets/service/uiux.png"
+import landingpages from "../assets/service/Landing-Pages.png"
+import webmaintainance from "../assets/service/Web-Maintanance.png"
 
-// Icons
-import website from "../assets/service/website.svg"
-import ecom from "../assets/service/e-commerce.svg"
-import landing from "../assets/service/landing-page.svg"
-import webapp from "../assets/service/web-app.svg"
-import uiux from "../assets/service/web-design.svg"
-import webmaintanance from "../assets/service/web-maintainance.svg"
+
 
 import servicebg from "../assets/blackbg.jpg"
 
@@ -79,12 +75,12 @@ const Website = () => {
         description="Developing responsive, secure, and high-performing websites using advanced technologies, Assuring a strong digital presence that drives your business goals and delivers a seamless user experience."
       />
         <FlipCard
-        firstImage="https://images.unsplash.com/photo-1477313372947-d68a7d410e9f?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb"
+        firstImage={landingpages}
         secondImage={servicebg}
         description="Creating conversion-focused landing pages with clear messaging and strategic calls-to-action, focusing to maximize engagement and optimize your marketing campaigns."
       />
        <FlipCard
-        firstImage="https://images.unsplash.com/photo-1477313372947-d68a7d410e9f?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb"
+        firstImage={webmaintainance}
         secondImage={servicebg}
         description="Providing proactive web maintenance services that make sure your website remains secure, up-to-date, and performs flawlessly, minimizing downtime and keeping your business running smoothly."
       />

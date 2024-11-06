@@ -120,11 +120,31 @@ span.navbar-text{
 /* Mobile view navbar */
 @media (max-width: 768px) {
   .navbar-logo .logo{
-    width: 120px;
+    position: relative;
+    width: 130px;
   }
   .mob-nav{
-    position: absolute;
+    position: fixed;
     right: 20px;
+    top: 55px;
+    background-color: var(--main) !important;
+  }
+  .navbar-nav{
+    position: relative;
+    z-index: 4;
+    padding: 60px;
+    gap: 15px;
+    background-color: rgba(48, 48, 48, 0.546);
+    height: 50vh !important;
+  }
+  .navbar-text a{
+    position: absolute;
+    bottom: 40px;
+    z-index: 5;
+    padding: 10px 5px;
+    background-color: var(--main) !important;
+    width: 170px !important;
+    border-radius: 50px;
   }
   ::-webkit-scrollbar {
     display: none;
