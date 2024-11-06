@@ -28,7 +28,7 @@ import Numpy from "../assets/numpy.svg"
 import matplot from "../assets/matplotlib-1.svg"
 import Pytorch from "../assets/pytorch-1.webp"
 import scikit from "../assets/scikit.png"
-import DL from "../assets/Deep-learning.png"
+import DL from "../assets/deep-learning.png"
 import BERT from "../assets/BERT.png"
 import LLM from "../assets/LLM.png"
 import Hugging from "../assets/huggingface-2.svg"
@@ -212,7 +212,7 @@ const TechStacks = () => {
                                 <p>Sci-Kit</p>
                             </div>
                             <div className='techStack-techs'>
-                                <img src={DL} alt='canva' />
+                                <img src={DL} alt='Deep learning' />
                                 <p>Deep Learning</p>
                             </div>
                             <div className='techStack-techs'>

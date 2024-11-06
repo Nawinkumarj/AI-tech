@@ -1,6 +1,7 @@
 import {Container,  Row, Col} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee,faNewspaper,faThumbsUp } from '@fortawesome/free-solid-svg-icons'
+
 const About = () => {
   return (
     <Container id='about' className='Aboutus'>
