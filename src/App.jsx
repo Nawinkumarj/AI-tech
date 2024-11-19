@@ -7,9 +7,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AboutMain from './components/compoMain/AboutMain';
 import Mockups from './components/Projects';
 import Letstalk from './components/Letstalk';
-import Products from './components/Product'
-import ServiceMain from './components/compoMain/ServiceMain'
-import Contact from './components/Contact'
+import Products from './components/Product';
+import ServiceMain from './components/compoMain/ServiceMain';
+import Contact from './components/Contact';
 import ScrollToTop from './components/ScrollToTop';
 
 
