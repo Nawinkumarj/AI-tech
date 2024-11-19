@@ -1,4 +1,5 @@
 
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
 // Banner
 import webbanner from "../assets/service/Website.png"
@@ -7,17 +8,16 @@ import webappbanner from "../assets/service/Webapp.png"
 import uiuxbanner from "../assets/service/uiux.png"
 import landingpages from "../assets/service/Landing-Pages.png"
 import webmaintainance from "../assets/service/Web-Maintanance.png"
+import PropTypes from 'prop-types';
 
 
+import servicebg from "../assets/blackbg.jpg";
 
-import servicebg from "../assets/blackbg.jpg"
-
-const FlipCard = ({ firstImage, secondImage, title, description, subtitle, link,servImage }) => {
+const FlipCard  = ({ firstImage, secondImage, description, subtitle }) => {
   const [bgImage1, setBgImage1] = useState('');
   const [bgImage2, setBgImage2] = useState('');
 
   useEffect(() => {
-    // Set the background images when component mounts
     setBgImage1(firstImage);
     setBgImage2(secondImage);
   }, [firstImage, secondImage]);
@@ -44,13 +44,19 @@ const FlipCard = ({ firstImage, secondImage, title, description, subtitle, link,
   );
 };
 
+FlipCard.propTypes = {
+  firstImage: PropTypes.string.isRequired,
+  secondImage: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+};
 
 
 const Website = () => {
   return (
     <div className='website-main'>
          <div className='website-head'>
-            <h1>WEBSITES</h1>
+            <h1 className='title'>WEBSITES</h1>
         </div>
     <div className="centerflipcards">
        

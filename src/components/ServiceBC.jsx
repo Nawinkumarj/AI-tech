@@ -1,4 +1,5 @@
 
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
 import servicebg from "../assets/blackbg.jpg"
 
@@ -6,8 +7,9 @@ import token from "../assets/service/Tokenization.png"
 import ico from "../assets/service/ICO.png"
 import bc from "../assets/service/blockchain.png"
 
+import PropTypes from 'prop-types';
 
-const FlipCard = ({ firstImage, secondImage, title, description, subtitle, link,servImage }) => {
+const FlipCard = ({ firstImage, secondImage, description, subtitle }) => {
   const [bgImage1, setBgImage1] = useState('');
   const [bgImage2, setBgImage2] = useState('');
 
@@ -38,13 +40,18 @@ const FlipCard = ({ firstImage, secondImage, title, description, subtitle, link,
   );
 };
 
-
+FlipCard.propTypes = {
+  firstImage: PropTypes.string.isRequired,
+  secondImage: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+};
 
 const Blockchain = () => {
   return (
     <div className='website-main my-5'>
          <div className='website-head'>
-            <h1>BLOCKCHAIN</h1>
+            <h1 className='title'>BLOCKCHAIN</h1>
         </div>
     <div className="centerflipcards my-5">
        

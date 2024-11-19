@@ -10,6 +10,7 @@ import Letstalk from './components/Letstalk';
 import Products from './components/Product'
 import ServiceMain from './components/compoMain/ServiceMain'
 import Contact from './components/Contact'
+import ScrollToTop from './components/scrollTotop';
 
 
 const FluidCursor = () => {
@@ -92,6 +93,7 @@ const App = () => {
     >
     <Router>
       <FluidCursor/>
+      <ScrollToTop />
         <NavBar />
         <div className='app-main'>
           <Routes>

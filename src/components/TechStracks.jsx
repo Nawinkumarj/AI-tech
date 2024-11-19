@@ -49,7 +49,7 @@ const TechStacks = () => {
         <div className='techStack-container'>
             <div className='techStack-main'>
                 <div className='techStack-head'>
-                    <h1>TECH STACKS</h1>
+                    <h1 className="title">TECH STACKS</h1>
                 </div>
                 {/* <hr/> */}
                 <div className='techStack-content'>

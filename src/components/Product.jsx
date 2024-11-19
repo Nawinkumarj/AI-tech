@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react"
 import marketing from "../assets/products/AI-marketing.png"
 import agent from "../assets/products/AI-agent.png"

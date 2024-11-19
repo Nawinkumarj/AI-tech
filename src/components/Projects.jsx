@@ -1,6 +1,7 @@
 import React from 'react'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import rag from "../assets/projects/rag.mp4"
 
 import Slider from "react-slick";
 
@@ -13,13 +14,17 @@ import bfc from "../assets/mockups/bfc.png"
 import nexus from "../assets/mockups/nexus.png"
 import spices from "../assets/mockups/FP-spices.png"
 import blogs from "../assets/mockups/PC-blogs.png"
-import nlp from "../assets/projects/nature-themed.png"
-// import aiv from "../assets/projects/AI-voice.mp4"
+import consulven from "../assets/mockups/consulven.png"
+
+
 import stable1 from "../assets/projects/stable1.png"
 import stable2 from "../assets/projects/stable2.png"
 import stable3 from "../assets/projects/stable3.png"
 import stable4 from "../assets/projects/stable4.png"
-
+// Video
+import engarb from "../assets/projects/eng-arb.mp4"
+import engspn from "../assets/projects/eng-spa.mp4"
+import engfrn from "../assets/projects/eng-frn.mp4"
 const Mockups = () => {
   const settings = {
     dots: false,
@@ -28,7 +33,7 @@ const Mockups = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000, // Slide every 3 seconds
+    autoplaySpeed: 3000,
   };
   return (
     <div className='mockups-main'>
@@ -37,7 +42,7 @@ const Mockups = () => {
         <h1 className='about-txt-bg'>our projects</h1>
       </div>
       <div className="heading">
-        <h1 className="heading-text text-center">Websites</h1>
+        <h1 className="heading-text text-center title">Websites</h1>
       </div>
         <div className='mockups-projects'>
             <div className='mockup-img'>
@@ -64,12 +69,16 @@ const Mockups = () => {
             <div className='mockup-img'>
               <img className='magicBorder' src={bfc}/>
             </div>
+            <div className='mockup-img'>
+              <img className='magicBorder' src={consulven}/>
+            </div>
         </div>
         <div className="heading">
-            <h1 className="heading-text text-center">AI</h1>
+            <h1 className="heading-text text-center title">AI</h1>
           </div>
         <div className="mockups-projects">
           <div className="mockup-img">
+          <h2 className="projects-text">Text to Image</h2>
             <Slider {...settings}>
               <div>
                 <img className="magicBorder" src={stable1} alt="Slide 1" />
@@ -86,10 +95,22 @@ const Mockups = () => {
             </Slider>
           </div>
             <div className='mockup-img'>
-              <video autoPlay  loop muted className='magicBorder' src={nlp} type="video/mp4"/>
+              <video autoPlay loop muted className='magicBorder product-video' src={rag} type="video/mp4"/>
+                <h2 className="projects-text">RAG</h2>
             </div>
             <div className='mockup-img'>
-              <img className='magicBorder' src={nlp}/>
+            <h2 className="projects-text">Language Translation</h2>
+            <Slider {...settings}>
+              <div>
+                <video autoPlay loop muted className='magicBorder product-video' src={engarb} type="video/mp4"/>
+              </div>
+              <div>
+              <video autoPlay loop muted className='magicBorder product-video' src={engfrn} type="video/mp4"/>
+              </div>
+              <div>
+                <video autoPlay loop muted className='magicBorder product-video' src={engspn} type="video/mp4"/>
+              </div>
+            </Slider>
             </div>
         </div>
 

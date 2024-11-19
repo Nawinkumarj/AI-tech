@@ -1,5 +1,5 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-import { FaPaperclip, FaHeart } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -15,10 +15,6 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleFileAttach = (e) => {
-    console.log(e.target.files[0]);
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form Submitted', formData);
@@ -32,9 +28,8 @@ const Contact = () => {
   return (
     <div className="container-fluid contact min-vh-100 d-flex flex-column align-items-center justify-content-center text-white p-4 mt-5">
       <div className="col-lg-6 col-md-8 col-sm-10">
-        <h1 className="text-left my-5">
-          Hello! <br />
-          We are happy to see you on this page. Please tell us what project you want to do with us?
+        <h1 className="text-left contact-text">
+            <span>Hey there,</span> innovator! <br /> You dream it, we tech it. Ready to build something extraordinary?
         </h1>
         <form onSubmit={handleSubmit} className="needs-validation" noValidate>
           <div className="form row mb-3">

@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import { Container, Carousel } from 'react-bootstrap';
 
@@ -16,6 +17,15 @@ import testiL3 from "../assets/testimonials/fplg.jpg";
 import testiL4 from "../assets/testimonials/Nexuslg.jpg";
 import testiL5 from "../assets/testimonials/Pclg.jpg";
 import testiL6 from "../assets/testimonials/Synlg.jpg";
+
+// images for smaller device
+import testiSm1 from "../assets/Clients/EEB.svg";
+import testiSm2 from "../assets/Clients/CONSULVEN.svg"
+import testiSm3 from "../assets/Clients/FP.svg"
+import testiSm4 from "../assets/Clients/NEXUS.svg"
+import testiSm5 from "../assets/Clients/PC.svg"
+import testiSm6 from "../assets/Clients/SYENRGIST.svg"
+
 
 const Testimonials = () => {
     const [openImageIndex, setOpenImageIndex] = useState(null);
@@ -74,49 +84,81 @@ const Testimonials = () => {
                     <Carousel.Item>
                         <div className="testimonial4_slide">
                             <img
-                                src="https://i.ibb.co/8x9xK4H/team.jpg"
+                                src={testiSm1}
                                 className="img-circle img-responsive"
-                                alt="Client 1"
+                                alt="EEB Engineering"
                             />
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                ever since the 1500s, when an unknown printer took a galley of
-                                type and scrambled it to make a type specimen book.
+                                Developed an outstanding website and landing page for us. 
+                                Their design is sleek, user-friendly, and perfectly captures our brand. We&apos;re thrilled with the results. 
                             </p>
-                            <h4>Client 1</h4>
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="testimonial4_slide">
                             <img
-                                src="https://i.ibb.co/8x9xK4H/team.jpg"
+                                src={testiSm2}
                                 className="img-circle img-responsive"
-                                alt="Client 2"
+                                alt="Consulven"
                             />
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                ever since the 1500s, when an unknown printer took a galley of
-                                type and scrambled it to make a type specimen book.
+                                Our experience with BFC Tech Media was exceptional. 
+                                They built an engaging website for our company Consulven that’s visually appealing, easy to navigate, and optimized for performance. 
+                                Thanks to their expertise, we now have a powerful online presence that reflects our brand perfectly!
                             </p>
-                            <h4>Client 2</h4>
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="testimonial4_slide">
                             <img
-                                src="https://i.ibb.co/8x9xK4H/team.jpg"
+                                src={testiSm3}
                                 className="img-circle img-responsive"
-                                alt="Client 3"
+                                alt="Fasta Pizza"
                             />
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text
-                                ever since the 1500s, when an unknown printer took a galley of
-                                type and scrambled it to make a type specimen book.
+                                 They transformed our digital presence with a modern e-commerce website and an AI chatbot that enhanced our customer service. 
+                                 Their innovative solutions have made a real impact on Brand!
                             </p>
-                            <h4>Client 3</h4>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="testimonial4_slide">
+                            <img
+                                src={testiSm4}
+                                className="img-circle img-responsive"
+                                alt="Nexus-international"
+                            />
+                            <p>
+                                They developed a professional and user-friendly website for Nexus that aligns seamlessly with our financial services. 
+                                The design combines both style and functionality.
+                            </p>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="testimonial4_slide">
+                            <img
+                                src={testiSm5}
+                                className="img-circle img-responsive"
+                                alt="Prime-counsel"
+                            />
+                            <p>
+                                Developed an exceptional website, blog page, and web application for us. 
+                                Their work is professional, seamless, and truly reflects our vision. Overall the work done by them is amazing. Thank you, team!
+                            </p>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="testimonial4_slide">
+                            <img
+                                src={testiSm6}
+                                className="img-circle img-responsive"
+                                alt="Synergist"
+                            />
+                            <p>
+                                An innovative and unique website was made for our Company - Synergist. 
+                                Their design is modern, intuitive, and perfectly aligns with our brand. 
+                                We&#39;re extremely pleased with the result!
+                            </p>
                         </div>
                     </Carousel.Item>
                 </Carousel>
