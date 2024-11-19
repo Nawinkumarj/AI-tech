@@ -10,7 +10,7 @@ import Letstalk from './components/Letstalk';
 import Products from './components/Product'
 import ServiceMain from './components/compoMain/ServiceMain'
 import Contact from './components/Contact'
-import ScrollToTop from './components/scrollTotop';
+import ScrollToTop from './components/ScrollToTop';
 
 
 const FluidCursor = () => {
@@ -89,7 +89,7 @@ const App = () => {
         top:"0",
         pointerEvents: 'auto', 
       }}
-      onMouseEnter={handleMouseEnter} // Handle mouse enter to ensure text is interactive
+      onMouseEnter={handleMouseEnter}
     >
     <Router>
       <FluidCursor/>
